@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banagar Associates | Premium Wedding & Event Venue</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,300;0,400;1,300&family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../index.css">
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#home">
+                <div class="brand-logo me-2"><img src="../assets/images/logo-01.png" alt="Banagar Associates Logo"></div>
+                <div class="brand-text">   
+                </div>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-3">
+                    <li class="nav-item"><a class="nav-link active" href="../index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#venues">VENUES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#gallery">GALLERY</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#trust">WHY TRUST US</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#contact">CONTACT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./about.html">ABOUT US</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                    <a href="tel:+911234567890" class="text-white text-decoration-none fs-6 d-none d-xl-inline"><i class="bi bi-telephone text-primary me-2"></i>CALL US</a>
+                    <a href="#venues" class="btn btn-primary px-4 py-2 fw-semibold tracking-wide rounded-0">BOOK NOW</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- gallery section -->
+ <section id="gallery" class="py-5 bg-dark-deep">
+    <div class="container-fluid px-md-5 py-4"> <div class="text-center max-w-xl mx-auto mb-4" data-animate="fadeInDown">
+            <h6 class="text-gold tracking-widest text-uppercase small mb-2">OUR VISUAL JOURNEY</h6>
+            <h2 class="display-6 text-white font-serif fw-light">Glimpses Of Previous Events</h2>
+            <div class="accent-line mx-auto my-3"></div>
+        </div>
+
+        <div class="row justify-content-center mb-4" data-animate="fadeInUp">
+            <div class="col-12 text-center">
+                <div class="d-flex flex-wrap justify-content-center gap-2" id="gallery-filter-controls">
+                    <button class="btn btn-gallery-filter active-g-filter px-4 py-2" data-gfilter="all">ALL MEDIA</button>
+                    <button class="btn btn-gallery-filter px-4 py-2" data-gfilter="images">PHOTOS</button>
+                    <button class="btn btn-gallery-filter px-4 py-2" data-gfilter="videos">VIDEOS</button>
+                    <button class="btn btn-gallery-filter px-4 py-2" data-gfilter="feedback">FEEDBACK (VIDEOS)</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-3" id="filterable-gallery-grid">
+            
+            <div class="col-sm-6 col-md-4 col-xl-3 gallery-matrix-item" data-gcat="images">
+                <div class="gallery-mini-card position-relative overflow-hidden shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?auto=format&fit=crop&w=600&q=80" alt="Royal Mandap Decor" class="img-fluid gallery-asset">
+                    <div class="gallery-asset-overlay p-3 d-flex flex-column justify-content-between">
+                        <span class="badge bg-gold text-dark rounded-0 px-2 py-1 align-self-start"><i class="bi bi-camera me-1"></i> IMAGE</span>
+                        <div>
+                            <span class="fs-8 tracking-wider text-gold text-uppercase d-block mb-1">Weddings</span>
+                            <h5 class="h6 text-white font-serif mb-0">Royal Mandap Decor</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-xl-3 gallery-matrix-item" data-gcat="videos">
+                <div class="gallery-mini-card position-relative overflow-hidden shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=600&q=80" alt="Evening Lawn Walkthrough" class="img-fluid gallery-asset">
+                    <div class="gallery-asset-overlay p-3 d-flex flex-column justify-content-between">
+                        <span class="badge bg-primary rounded-0 px-2 py-1 align-self-start"><i class="bi bi-play-circle me-1"></i> REEL</span>
+                        <div class="text-center my-auto play-icon-center"><i class="bi bi-play-fill display-6 text-white opacity-75"></i></div>
+                        <div>
+                            <span class="fs-8 tracking-wider text-gold text-uppercase d-block mb-1">Walkthrough</span>
+                            <h5 class="h6 text-white font-serif mb-0">Grand Evening Lawn Tour</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-xl-3 gallery-matrix-item" data-gcat="feedback">
+                <div class="gallery-mini-card position-relative overflow-hidden shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=600&q=80" alt="Kulkarni Family Interview" class="img-fluid gallery-asset">
+                    <div class="gallery-asset-overlay p-3 d-flex flex-column justify-content-between">
+                        <span class="badge bg-success rounded-0 px-2 py-1 align-self-start"><i class="bi bi-chat-heart me-1"></i> TESTIMONIAL</span>
+                        <div class="text-center my-auto play-icon-center"><i class="bi bi-play-fill display-6 text-white opacity-75"></i></div>
+                        <div>
+                            <span class="fs-8 tracking-wider text-gold text-uppercase d-block mb-1">Kulkarni Family</span>
+                            <h5 class="h6 text-white font-serif mb-0">"Flawless Management Execution"</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <div class="col-sm-6 col-md-4 col-xl-3 gallery-matrix-item" data-gcat="images">
+                <div class="gallery-mini-card position-relative overflow-hidden shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=600&q=80" alt="Luxury Dining Setup" class="img-fluid gallery-asset">
+                    <div class="gallery-asset-overlay p-3 d-flex flex-column justify-content-between">
+                        <span class="badge bg-gold text-dark rounded-0 px-2 py-1 align-self-start"><i class="bi bi-camera me-1"></i> IMAGE</span>
+                        <div>
+                            <span class="fs-8 tracking-wider text-gold text-uppercase d-block mb-1">Catering Suites</span>
+                            <h5 class="h6 text-white font-serif mb-0">Luxury Dining Arrangement</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="../index.js"></script>
+</body>
+</html>
