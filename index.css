@@ -573,3 +573,67 @@ body {
         gap: 8px !important;
     }
 }
+
+/* whatsapp and call icon css */
+
+.floating-contact-container {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 9999; /* Ensures it stays on top of all other content */
+}
+
+/* Base styling for the circular buttons */
+.floating-btn {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 1.5rem; /* Size of the icon */
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+/* WhatsApp Specific Colors */
+.whatsapp-btn {
+    background-color: #25D366; 
+}
+.whatsapp-btn:hover {
+    background-color: #1ebe57;
+    color: #ffffff;
+    transform: scale(1.1) translateY(-4px);
+    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
+}
+
+/* Call Button Specific Colors (Using your brand blue) */
+.call-btn {
+    background-color: var(--primary-blue, #3b82f6); 
+}
+.call-btn:hover {
+    background-color: #2563eb;
+    color: #ffffff;
+    transform: scale(1.1) translateY(-4px);
+    box-shadow: 0 8px 20px rgba(59, 130, 246, 0.4);
+}
+
+/* Mobile Adjustments */
+@media (max-width: 767.98px) {
+    .floating-contact-container {
+        bottom: 20px;
+        right: 20px;
+        gap: 12px;
+    }
+    .floating-btn {
+        width: 48px;
+        height: 48px;
+        font-size: 1.25rem;
+    }
+}
