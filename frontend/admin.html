@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Control Center | Banagar Associates</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./admin.css">
+</head>
+<body>
+
+    <aside class="admin-sidebar">
+        <div class="admin-brand">
+            <div class="brand-logo-frame">
+                <img src="../assets/images/logo-01.png" alt="Banagar Associates Logo" class="admin-logo-img">
+            </div></div>
+        
+        <div class="nav-menu">
+            <span class="px-4 text-muted fs-8 tracking-widest text-uppercase mb-2 d-block">Modules</span>
+            <a class="admin-nav-link active-tab" onclick="switchView('overview')"><i class="bi bi-grid-1x2"></i> Overview</a>
+            <a class="admin-nav-link" onclick="switchView('bookings')"><i class="bi bi-journal-check"></i> Bookings</a>
+            <a class="admin-nav-link" onclick="switchView('calendar')"><i class="bi bi-calendar-range"></i> Calendar</a>
+            <a class="admin-nav-link" onclick="switchView('enquiries')"><i class="bi bi-envelope"></i> Enquiries <span class="badge bg-primary ms-auto">5</span></a>
+            <a class="admin-nav-link" onclick="switchView('gallery')"><i class="bi bi-images"></i> Manage Gallery</a>
+        </div>
+
+        <div class="sidebar-footer">
+           <a href="#" class="admin-nav-link" data-bs-toggle="modal" data-bs-target="#profileModal"><i class="bi bi-person-gear"></i>  Admin Profile</a>
+            <a href="index.html" class="admin-nav-link text-danger"><i class="bi bi-box-arrow-left"></i> Secure Logout</a>
+        </div>
+    </aside>
+
+    <main class="admin-main-content">
+
+        <section id="view-overview" class="view-panel active-view">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="h4 text-white fw-light mb-0">Admin Overview</h2>
+                <span class="text-muted fs-8">Last Updated: Just now</span>
+            </div>
+
+            <div class="row g-3 mb-5">
+                <div class="col-md-4 col-lg-2"><div class="stat-card"><span class="text-muted fs-8 text-uppercase d-block mb-1">Total Bookings</span><h3 class="text-white mb-0">142</h3></div></div>
+                <div class="col-md-4 col-lg-2"><div class="stat-card"><span class="text-muted fs-8 text-uppercase d-block mb-1">Confirmed</span><h3 class="text-white mb-0">98</h3></div></div>
+                <div class="col-md-4 col-lg-2"><div class="stat-card"><span class="text-muted fs-8 text-uppercase d-block mb-1">Pending</span><h3 class="text-white mb-0">04</h3></div></div>
+                <div class="col-md-4 col-lg-2"><div class="stat-card"><span class="text-muted fs-8 text-uppercase d-block mb-1">Total Enquiries</span><h3 class="text-white mb-0">850</h3></div></div>
+                <div class="col-md-4 col-lg-2"><div class="stat-card"><span class="text-muted fs-8 text-uppercase d-block mb-1">New Enquiries</span><h3 class="text-white mb-0">12</h3></div></div>
+                <div class="col-md-4 col-lg-2"><div class="stat-card"><span class="text-muted fs-8 text-uppercase d-block mb-1">Payments (YTD)</span><h3 class="text-gold mb-0 fs-5 mt-2">₹42.5L</h3></div></div>
+            </div>
+
+            <h5 class="h6 text-white mb-3">Recent Booking Actions</h5>
+            <div class="table-responsive table-wrapper shadow-sm">
+                <table class="table-dark-custom">
+                    <thead>
+                        <tr>
+                            <th>ID</th><th>Client Name</th><th>Venue</th><th>Event Type</th><th>Date</th><th>Phone</th><th>Amount</th><th>Status</th><th class="text-end">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-muted">#BA091</td><td class="text-white">Rahul Sharma</td><td>Hall + Lawn</td><td>Wedding</td><td>Oct 15, 2026</td><td>+91 9876543210</td><td class="text-gold">₹3.0L</td>
+                            <td><span class="status-badge bg-pending">PENDING</span></td>
+                            <td>
+                                <div class="action-icon-group">
+                                    <button class="btn-icon confirm" title="Confirm"><i class="bi bi-check-lg"></i></button>
+                                    <button class="btn-icon cancel" title="Cancel"><i class="bi bi-x-lg"></i></button>
+                                    <button class="btn-icon edit" title="Edit"><i class="bi bi-pencil"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-muted">#BA090</td><td class="text-white">Priya Desai</td><td>Marriage Hall</td><td>Engagement</td><td>Nov 02, 2026</td><td>+91 9123456780</td><td class="text-gold">₹2.0L</td>
+                            <td><span class="status-badge bg-confirmed">CONFIRMED</span></td>
+                            <td>
+                                <div class="action-icon-group">
+                                    <button class="btn-icon edit" title="Edit"><i class="bi bi-pencil"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="view-bookings" class="view-panel">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="h4 text-white fw-light mb-0">Master Booking Ledger</h2>
+                <div class="d-flex gap-2">
+                    <input type="date" class="admin-input py-1" style="width: auto;">
+                    <button class="btn btn-primary fs-7 px-3 py-1"><i class="bi bi-download"></i> Export CSV</button>
+                </div>
+            </div>
+            
+            <div class="table-responsive table-wrapper shadow-sm">
+                <table class="table-dark-custom">
+                    <thead>
+                        <tr>
+                            <th>Date <i class="bi bi-arrow-down-short"></i></th><th>ID</th><th>Client</th><th>Venue</th><th>Payment</th><th>Status</th><th class="text-end">Manage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-gold">Oct 15, 2026</td><td class="text-muted">#BA091</td><td class="text-white">Rahul Sharma</td><td>Hall + Lawn</td><td>Advance Paid</td>
+                            <td><span class="status-badge bg-pending">PENDING</span></td>
+                            <td>
+                                <div class="action-icon-group">
+                                    <button class="btn-icon confirm" title="Confirm"><i class="bi bi-check-lg"></i></button>
+                                    <button class="btn-icon cancel" title="Cancel"><i class="bi bi-x-lg"></i></button>
+                                    <button class="btn-icon edit" title="Edit"><i class="bi bi-pencil"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-gold">Nov 02, 2026</td><td class="text-muted">#BA090</td><td class="text-white">Priya Desai</td><td>Marriage Hall</td><td>Fully Paid</td>
+                            <td><span class="status-badge bg-confirmed">CONFIRMED</span></td>
+                            <td>
+                                <div class="action-icon-group">
+                                    <button class="btn-icon edit" title="Edit"><i class="bi bi-pencil"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-gold">Dec 25, 2026</td><td class="text-muted">#BA088</td><td class="text-white">Amit Singh</td><td>Banagar Lawns</td><td>Refunded</td>
+                            <td><span class="status-badge bg-cancelled">CANCELLED</span></td>
+                            <td>
+                                <div class="action-icon-group">
+                                    <button class="btn-icon edit" title="View"><i class="bi bi-eye"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="view-calendar" class="view-panel">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="h4 text-white fw-light mb-0">Availability Calendar</h2>
+                <div class="d-flex gap-3 align-items-center">
+                    <button class="btn-icon" onclick="changeMonth(-1)"><i class="bi bi-chevron-left"></i></button>
+                    <span class="fs-6 fw-bold text-white" id="calendar-month-year">Month Year</span>
+                    <button class="btn-icon" onclick="changeMonth(1)"><i class="bi bi-chevron-right"></i></button>
+                </div>
+            </div>
+
+            <div class="calendar-grid" id="dynamic-calendar">
+                </div>
+            <p class="text-muted fs-8 mt-3"><i class="bi bi-info-circle me-1"></i> Red dates indicate confirmed reservations. Click on a red box to view details.</p>
+        </section>
+
+        <section id="view-enquiries" class="view-panel">
+            <h2 class="h4 text-white fw-light mb-4">Contact Enquiries Desk</h2>
+            <div class="table-responsive table-wrapper shadow-sm">
+                <table class="table-dark-custom">
+                    <thead>
+                        <tr>
+                            <th>Received</th><th>Name</th><th>Phone</th><th>Email</th><th>Target Date</th><th>Message Snippet</th><th>Status</th><th class="text-end">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-muted fs-8">2 hrs ago</td><td class="text-white">Arjun Patil</td><td>+91 9000011111</td><td>arjun@email.com</td><td>Dec 12, 2026</td>
+                            <td class="text-truncate" style="max-width: 150px;">Do you provide vegetarian catering?</td>
+                            <td><span class="status-badge bg-new">NEW</span></td>
+                            <td>
+                                <div class="action-icon-group">
+                                    <a href="tel:+919000011111" class="btn-icon edit" title="Call"><i class="bi bi-telephone"></i></a>
+                                    <a href="https://wa.me/919000011111" class="btn-icon confirm" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                                    <button class="btn-icon cancel" title="Mark Resolved"><i class="bi bi-check-all"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="view-gallery" class="view-panel">
+            <h2 class="h4 text-white fw-light mb-4">Gallery Management</h2>
+            
+            <div class="row mb-5">
+                <div class="col-md-4">
+                    <div class="upload-zone h-100 d-flex flex-column justify-content-center">
+                        <i class="bi bi-cloud-arrow-up display-4 text-primary mb-2"></i>
+                        <h6 class="text-white">Drag & Drop Media</h6>
+                        <span class="fs-8 text-muted">Supports JPG, PNG, MP4</span>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="stat-card">
+                        <h6 class="text-white mb-3">Asset Details</h6>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="fs-8 text-muted mb-1 text-uppercase">Media Type</label>
+                                <select class="admin-select">
+                                    <option>Photo (Image)</option>
+                                    <option>Walkthrough (Video)</option>
+                                    <option>Client Feedback</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="fs-8 text-muted mb-1 text-uppercase">Venue Category</label>
+                                <select class="admin-select">
+                                    <option>Banagar Lawns</option>
+                                    <option>Marriage Hall</option>
+                                    <option>Hall + Lawn Combo</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label class="fs-8 text-muted mb-1 text-uppercase">Public Description / Tags</label>
+                                <input type="text" class="admin-input" placeholder="e.g. Weddings, Lighting, Stage">
+                            </div>
+                            <div class="col-12 text-end mt-3">
+                                <button class="btn btn-primary fs-7 px-4">UPLOAD & PUBLISH</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center mb-4 border-bottom border-secondary border-opacity-10 pb-3 flex-wrap gap-3">
+                <div class="gallery-filters">
+                    <button class="filter-btn active">All Media</button>
+                    <button class="filter-btn">Images</button>
+                    <button class="filter-btn">Videos</button>
+                    <button class="filter-btn">Feedback</button>
+                </div>
+                <select class="admin-select" style="width: 200px;">
+                    <option>All Venues</option>
+                    <option>Banagar Lawns</option>
+                    <option>Marriage Hall</option>
+                    <option>Combo Packs</option>
+                </select>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4 col-lg-3">
+                    <div class="stat-card p-0 overflow-hidden gallery-admin-card">
+                        <img src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?auto=format&fit=crop&w=600&q=80" alt="Decor">
+                        <div class="p-3">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="badge bg-primary">Image</span>
+                                <span class="badge bg-secondary">Marriage Hall</span>
+                            </div>
+                            <h6 class="text-white fs-7 mb-1">Royal Mandap Decor</h6>
+                            <div class="d-flex justify-content-between mt-3">
+                                <button class="btn-icon edit"><i class="bi bi-pencil"></i></button>
+                                <button class="btn-icon cancel"><i class="bi bi-trash"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="modal fade" id="bookingModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title font-serif text-white">Booking Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-3">
+                        <div class="col-6"><span class="text-muted fs-8 d-block">Client Name</span><span class="text-white" id="modal-name"></span></div>
+                        <div class="col-6"><span class="text-muted fs-8 d-block">Phone Number</span><span class="text-white" id="modal-phone"></span></div>
+                        <div class="col-6"><span class="text-muted fs-8 d-block">Email</span><span class="text-white" id="modal-email"></span></div>
+                        <div class="col-6"><span class="text-muted fs-8 d-block">Event Date</span><span class="text-gold" id="modal-date"></span></div>
+                        <div class="col-12"><span class="text-muted fs-8 d-block">Venue Selected</span><span class="text-primary" id="modal-venue"></span></div>
+                        <div class="col-12"><span class="text-muted fs-8 d-block">Status</span><span class="status-badge bg-confirmed mt-1 d-inline-block" id="modal-status"></span></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-light btn-sm" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary btn-sm">Manage Booking</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- admin profile modal -->
+
+    <div class="modal fade" id="profileModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title font-serif text-white">Admin Profile Settings</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    
+                    <div class="text-center mb-4">
+                        <div class="avatar-upload-container mx-auto position-relative">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=150&q=80" 
+                                 alt="Admin Avatar" id="admin-avatar-preview" class="rounded-circle shadow">
+                            
+                            <label for="avatar-upload-input" class="avatar-hover-overlay rounded-circle d-flex flex-column align-items-center justify-content-center">
+                                <i class="bi bi-camera-fill fs-4 text-white"></i>
+                                <span class="fs-8 text-white mt-1">Change</span>
+                            </label>
+                            <input type="file" id="avatar-upload-input" class="d-none" accept="image/*" onchange="previewAvatar(event)">
+                        </div>
+                    </div>
+
+                    <form id="admin-profile-form">
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <label class="fs-8 text-muted mb-1 text-uppercase">Full Name</label>
+                                <input type="text" class="admin-input" value="System Admin">
+                            </div>
+                            <div class="col-12">
+                                <label class="fs-8 text-muted mb-1 text-uppercase">Email Address</label>
+                                <input type="email" class="admin-input" value="admin@banagar.com">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="fs-8 text-muted mb-1 text-uppercase">Role</label>
+                                <input type="text" class="admin-input text-muted" value="Super Admin" readonly style="background: rgba(0,0,0,0.4); cursor: not-allowed;">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="fs-8 text-muted mb-1 text-uppercase">New Password</label>
+                                <input type="password" class="admin-input" placeholder="Leave blank to keep current">
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-light btn-sm" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary btn-sm px-4">Save Changes</button>
+                </div>
+            </div>
+        </div>
+    </div>  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./admin.js"></script>
+</body>
+</html>
