@@ -9,29 +9,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,300;0,400;1,300&family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../index.css">
     <style>
-        .contact-nav-pill {
+    
+    .contact-nav-pill {
     border: 1px solid #448eea;
     border-radius: 20px;
     color: #ffffff !important;
 }
 
 /* Left Column Info Chips Layout Box */
-.contact-info-chip {
-    background-color: #0b1119 !important; /* Rich deep navy box envelope wrapper */
+    .contact-info-chip {
+    background-color: #1b2333; /* Rich deep navy box envelope wrapper */
     border: 1px solid rgba(255, 255, 255, 0.03);
     transition: background-color 0.2s ease;
 }
 
 .contact-info-chip:hover {
-    background-color: #121924 !important;
+    background-color: #1e293a !important;
 }
 
 .chip-icon-box {
     width: 42px;
     height: 42px;
-    background-color: rgba(68, 142, 234, 0.08);
+    background-color:rgb(142, 142, 244);
     border: 1px solid rgba(68, 142, 234, 0.15);
     font-size: 1.1rem;
+    border-radius: 30%;
 }
 
 /* Main column Left Map Display dimensions */
@@ -47,7 +49,7 @@
 
 /* Right Column Contact Form Wrap Background Box */
 .contact-form-container {
-    background-color: #0c1017 !important; /* Solid matte finish contrast container */
+    background-color: #1b2333 !important; /* Solid matte finish contrast container */
     border: 1px solid rgba(255, 255, 255, 0.02);
 }
 
@@ -62,7 +64,7 @@
     font-size: 0.68rem !important;
     font-weight: 500;
     letter-spacing: 0.1em;
-    color: #4a5568; /* Hard low contrast grey text matching image layout */
+    color: #fcfcfc; /* Hard low contrast grey text matching image layout */
     margin-bottom: 6px;
     text-transform: uppercase;
 }
@@ -71,7 +73,7 @@
     width: 100%;
     background-color: transparent !important;
     border: none !important;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15) !important;
+    border-bottom: 1px solid rgb(51, 51, 105) !important;
     padding: 8px 0px !important;
     font-size: 0.88rem !important;
     font-weight: 300;
@@ -95,9 +97,7 @@ textarea.form-input-minimal {
     resize: none;
 }
 
-/* ==========================================================================
-   CONTACT PAGE SPECIFIC RESPONSIVE MODULE
-   ========================================================================== */
+/* mobile responsive view */
 
 /* 1. TABLETS & SMALL DESKTOPS (Max-width: 991.98px) */
 @media (max-width: 991.98px) {
@@ -177,6 +177,7 @@ textarea.form-input-minimal {
     }
 }
     </style>
+    
 </head>
 <body class="bg-dark-deep text-white">
 
@@ -201,7 +202,7 @@ textarea.form-input-minimal {
                 </ul>
                 <div class="d-flex align-items-center gap-3">
                     <a href="tel:+911234567890" class="text-white text-decoration-none fs-6 d-none d-xl-inline"><i class="bi bi-telephone text-primary me-2"></i>CALL US</a>
-                    <a href="#venues" class="btn btn-primary px-4 py-2 fw-semibold tracking-wide rounded-0">BOOK NOW</a>
+                    <a href="./booking.html" class="btn btn-primary px-4 py-2 fw-semibold tracking-wide rounded-0">BOOK NOW</a>
                 </div>
             </div>
         </div>
@@ -225,7 +226,7 @@ textarea.form-input-minimal {
                             <i class="bi bi-geo-alt"></i>
                         </div>
                         <div>
-                            <span class="fs-8 tracking-wider text-uppercase text-muted d-block mb-1">VISIT US</span>
+                            <span class="fs-8 tracking-wider text-uppercase text-light-muted d-block mb-1">VISIT US</span>
                             <h6 class="fs-7 text-white mb-0 fw-normal">Banagar Properties, Main Road, City Center, Hubli</h6>
                         </div>
                     </div>
@@ -235,8 +236,8 @@ textarea.form-input-minimal {
                             <i class="bi bi-telephone"></i>
                         </div>
                         <div>
-                            <span class="fs-8 tracking-wider text-uppercase text-muted d-block mb-1">CALL US</span>
-                            <h6 class="fs-7 text-white mb-0 fw-normal">+91 98765 43210</h6>
+                            <span class="fs-8 tracking-wider text-uppercase text-light-muted d-block mb-1">CALL US</span>
+                            <h6 class="fs-7 text-white mb-0 fw-normal">+9148020911</h6>
                         </div>
                     </div>
 
@@ -245,7 +246,7 @@ textarea.form-input-minimal {
                             <i class="bi bi-envelope"></i>
                         </div>
                         <div>
-                            <span class="fs-8 tracking-wider text-uppercase text-muted d-block mb-1">EMAIL US</span>
+                            <span class="fs-8 tracking-wider text-uppercase text-light-muted d-block mb-1">EMAIL US</span>
                             <h6 class="fs-7 text-white mb-0 fw-normal">info@banagar.com</h6>
                         </div>
                     </div>
@@ -255,7 +256,7 @@ textarea.form-input-minimal {
                             <i class="bi bi-clock"></i>
                         </div>
                         <div>
-                            <span class="fs-8 tracking-wider text-uppercase text-muted d-block mb-1">WORKING HOURS</span>
+                            <span class="fs-8 tracking-wider text-uppercase text-light-muted d-block mb-1">WORKING HOURS</span>
                             <h6 class="fs-7 text-white mb-0 fw-normal">Monday - Sunday: 9:00 AM - 9:00 PM</h6>
                         </div>
                     </div>
@@ -376,15 +377,15 @@ textarea.form-input-minimal {
                 </div>
             </div>
             <hr class="border-secondary border-opacity-10 my-4">
-            <div class="row align-items-center fs-7 text-muted g-3">
+            <div class="row align-items-center fs-7 text-white g-3">
                 <div class="col-md-6 text-center text-md-start">
                     <p class="mb-0">© 2026 Banagar Associates. All rights reserved.</p>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
                     <div class="d-flex justify-content-center justify-content-md-end gap-3 sub-footer-links">
-                        <a href="#" class="text-muted text-decoration-none">Admin</a>
-                        <a href="#" class="text-muted text-decoration-none">Privacy Policy</a>
-                        <a href="#" class="text-muted text-decoration-none">Terms of Service</a>
+                        <a href="./admin.html" class="text-white text-decoration-none">Admin</a>
+                        <a href="#" class="text-white text-decoration-none">Privacy Policy</a>
+                        <a href="#" class="text-white text-decoration-none">Terms of Service</a>
                     </div>
                 </div>
             </div>

@@ -16,21 +16,38 @@
             overflow: hidden;
             position: relative;
         }
-        .detail-hero-frame img { width: 100%; height: 100%; object-fit: cover; }
+        .detail-hero-frame img { 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+        }
+
         .detail-hero-overlay {
-            position: absolute; inset: 0;
+            position: absolute; 
+            inset: 0;
             background: linear-gradient(to top, #0a0c10 0%, rgba(10,12,16,0.3) 50%);
         }
         .badge-capsule {
             background-color: #131b26 !important; color: #8e99a8 !important;
             font-size: 0.75rem !important; padding: 8px 16px !important; border-radius: 2px !important;
         }
+
         .gallery-thumb-card {
-            height: 220px; overflow: hidden;
+            height: 220px; 
+            overflow: hidden;
             border: 1px solid rgba(255,255,255,0.05);
         }
-        .gallery-thumb-card img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; }
-        .gallery-thumb-card:hover img { transform: scale(1.05); }
+
+        .gallery-thumb-card img { 
+            width: 100%; height: 100%; 
+            object-fit: cover; 
+            transition: transform 0.3s ease; 
+        }
+
+        .gallery-thumb-card:hover img { 
+            transform: scale(1.05); 
+        }
+        
     </style>
 </head>
 <body class="bg-dark-deep text-white">
@@ -56,7 +73,7 @@
                 </ul>
                 <div class="d-flex align-items-center gap-3">
                     <a href="tel:+911234567890" class="text-white text-decoration-none fs-6 d-none d-xl-inline"><i class="bi bi-telephone text-primary me-2"></i>CALL US</a>
-                    <a href="./frontend/booking.html" class="btn btn-primary px-4 py-2 fw-semibold tracking-wide rounded-0">BOOK NOW</a>
+                    <a href="../frontend/booking.html" class="btn btn-primary px-4 py-2 fw-semibold tracking-wide rounded-0">BOOK NOW</a>
                 </div>
             </div>
         </div>
@@ -108,7 +125,7 @@
     </section>
 
     <footer class="footer-section pt-5 pb-3">
-        <div class="container text-center text-muted fs-8">
+        <div class="container text-center text-white fs-8">
             <p class="mb-0">© 2026 Banagar Associates. All rights reserved.</p>
         </div>
     </footer>

@@ -1,4 +1,3 @@
-/* Custom Utility and Core Definitions */
 :root {
     --bg-deep-base: #0a0c10;
     --bg-card-surface: #12161f;
@@ -34,6 +33,7 @@ body {
 .bg-dark-mid { background-color: var(--bg-mid-gray); }
 .bg-dark-card { background-color: var(--bg-card-surface); }
 .bg-dark-solid { background-color: #0b0e14 !important; }
+
 .btn-primary {
     background-color: var(--primary-blue);
     border-color: var(--primary-blue);
@@ -97,7 +97,7 @@ body {
 .hero-overlay {
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: linear-gradient(to right, rgba(96, 97, 97, 0.92) 30%, rgba(92, 96, 104, 0.4) 100%);
+    background: linear-gradient(to right,rgba(96, 97, 97, 0.92) 30%, rgba(92, 96, 104, 0.4) 100%);
 }
 .main-heading {
     font-family: 'Playfair Display', serif;

@@ -42,11 +42,18 @@
 
         /* Navigation Bar Structural Adjustments */
         .navbar {
-            background-color: #0b0e14 !important;
+            background-color: #1d2536 !important;
             box-shadow: 0 10px 30px rgba(0,0,0,0.4);
         }
-        .brand-logo-frame { height: 42px; display: flex; align-items: center; }
-        .brand-logo-frame img { height: 100%; width: auto; object-fit: contain; }
+        .brand-logo-frame { height: 42px; 
+            display: flex; 
+            align-items: center; 
+        }
+        .brand-logo-frame img { 
+            height: 100%; 
+            width: auto; 
+            object-fit: contain; 
+        }
         .nav-link {
             font-size: 0.8rem;
             font-weight: 500;
@@ -65,56 +72,83 @@
 
         /* Section 1: Editorial Hero Layout Adjustments */
         .border-gold-frame {
-            border: 1px solid rgba(207, 168, 97, 0.3) !important;
+            border: 1px solid rgba(228, 217, 197, 0.3) !important;
             transform: translate(12px, 12px);
             z-index: 1;
         }
 
         /* Section 2: Blue-Navy Premium Metrics Panel */
-        .bg-midnight-premium { background-color: #0b0e14 !important; }
+        .bg-midnight-premium { background-color: #293d5f !important; }
 
         .bg-slate-surface {
-    background-color: #0d121c !important; /* Matches the solid card tone of the venue cards */
+            background-color: #1e2a42 !important; /* Matches the solid card tone of the venue cards */
             }
 
-.simple-metric-card {
-    border-radius: 4px;
-    transition: background-color 0.25s ease, transform 0.25s ease;
-}
+        .simple-metric-card {
+            border-radius: 4px;
+            transition: background-color 0.25s ease, transform 0.25s ease;
+            }
 
 /* Subtle response on user hover without breaking layout simplicity */
-.simple-metric-card:hover {
-    background-color: #131a26 !important;
-    transform: translateY(-3px);
-}
+        .simple-metric-card:hover {
+            background-color: #131a26 !important;
+            transform: translateY(-3px);
+            }
 
         /* Section 3: Interactive Chronological Timeline Design */
-        .timeline-container { position: relative; padding-left: 30px; }
+        .timeline-container { position: relative; 
+            padding-left: 30px; 
+        }
         .timeline-center-spine {
-            position: absolute; top: 0; bottom: 0; left: 6px; width: 2px;
-            background: linear-gradient(to bottom, var(--accent-gold) 0%, var(--primary-blue) 50%, #198754 100%);
+            position: absolute; 
+            top: 0; 
+            bottom: 0; 
+            left: 6px; 
+            width: 2px;
+            background: linear-gradient(to bottom,yellow 0%,  50%, #ffffff 100%);
             opacity: 0.15;
         }
+
         .timeline-dot {
-            position: absolute; left: -29px; top: 24px; width: 12px; height: 12px;
-            border-radius: 50%; border: 2px solid #0a0c10; z-index: 3;
+            position: absolute; 
+            left: -29px; 
+            top: 24px; 
+            width: 12px; 
+            height: 12px;
+            border-radius: 50%; 
+            border: 2px solid #ffffff; 
+            z-index: 1;
         }
         .timeline-card {
-            border: 1px solid rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(223, 211, 211, 0.04);
             border-radius: 4px;
-            background-color: #0d121c;
+            background-color: #323e55;
             transition: background-color 0.25s ease;
         }
-        .timeline-card:hover { background-color: var(--bg-card-surface) !important; }
+        .timeline-card:hover { background-color: #1e2a42 !important; }
 
         /* Layout Footer Framework */
-        .footer-section { background-color: #040810 !important; border-top: 1px solid rgba(255, 255, 255, 0.03); }
-        .footer-logo { height: 40px; width: auto; object-fit: contain; }
-        .footer-links li a { color: #8fa0b5 !important; text-decoration: none; transition: color 0.2s ease; }
+        .footer-section { background-color: #0d1930 !important; 
+            border-top: 1px solid rgba(255, 255, 255, 0.03); 
+        }
+        .footer-logo { height: 40px; 
+            width: auto; 
+            object-fit: contain; 
+        }
+        .footer-links li a { color: #b9c1cb !important; 
+            text-decoration: none; 
+            transition: color 0.2s ease; 
+        }
         .footer-links li a:hover { color: var(--primary-blue) !important; }
-        .footer-map-container { width: 100%; height: 140px; border: 1px solid rgba(255, 255, 255, 0.05); }
+        .footer-map-container { width: 100%; 
+            height: 140px; 
+            border: 1px solid rgba(255, 255, 255, 0.05); 
+        }
         .footer-map-container iframe { filter: grayscale(1) invert(0.92) contrast(1.1) brightness(0.95); }
-        .sub-footer-links a { color: #6c757d; text-decoration: none; transition: color 0.2s ease; }
+        .sub-footer-links a { color: #a5abb0; 
+            text-decoration: none; 
+            transition: color 0.2s ease; 
+        }
         .sub-footer-links a:hover { color: #ffffff !important; }
 
         @media (max-width: 991.98px) {
@@ -229,11 +263,11 @@
                     <li class="nav-item"><a class="nav-link" href="../index.html#gallery">GALLERY</a></li>
                     <li class="nav-item"><a class="nav-link" href="../index.html#trust">WHY TRUST US</a></li>
                     <li class="nav-item"><a class="nav-link" href="../frontend/contact.html">CONTACT</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about.html">ABOUT US</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../frontend/about.html">ABOUT US</a></li>
                 </ul>
                 <div class="d-flex align-items-center gap-3">
                     <a href="tel:+911234567890" class="text-white text-decoration-none fs-6 d-none d-xl-inline"><i class="bi bi-telephone text-primary me-2"></i>CALL US</a>
-                    <a href="#venues" class="btn btn-primary px-4 py-2 fw-semibold tracking-wide rounded-0">BOOK NOW</a>
+                    <a href="../frontend/booking.html" class="btn btn-primary px-4 py-2 fw-semibold tracking-wide rounded-0">BOOK NOW</a>
                 </div>
             </div>
         </div>
@@ -256,7 +290,7 @@
                 <div class="col-lg-6" data-animate="fadeInRight">
                     <div class="position-relative p-3 layout-frame-wrapper">
                         <div class="border-gold-frame position-absolute inset-0 m-1"></div>
-                        <img src="../assets/images/abt.png" alt="Banagar Luxury Legacy Presentation" class="img-fluid position-relative z-2 rounded-0 shadow-lg filter-cool">
+                        <img src="../assets/images/abt.png" alt="Banagar Luxury Legacy Presentation" class="img-fluid position-relative z-2 rounded-0 shadow-lg filter-grayscale">
                     </div>
                 </div>
             </div>
@@ -270,28 +304,28 @@
                 <div class="col-6 col-lg-3" data-animate="fadeInUp">
                     <div class="p-4 bg-slate-surface h-100 simple-metric-card border border-light border-opacity-5">
                         <div class="display-5 font-serif text-gold mb-2 fw-light">15+</div>
-                        <span class="fs-8 text-uppercase tracking-wider text-muted fw-light d-block">Years of Excellence</span>
+                        <span class="fs-9 text-uppercase tracking-wider text-white fw-light d-block">Years of Excellence</span>
                     </div>
                 </div>
                 
                 <div class="col-6 col-lg-3" data-animate="fadeInUp">
                     <div class="p-4 bg-slate-surface h-100 simple-metric-card border border-light border-opacity-5">
                         <div class="display-5 font-serif text-gold mb-2 fw-light">2,500+</div>
-                        <span class="fs-8 text-uppercase tracking-wider text-muted fw-light d-block">Events Executed</span>
+                        <span class="fs-9 text-uppercase tracking-wider text-white fw-light d-block">Events Executed</span>
                     </div>
                 </div>
                 
                 <div class="col-6 col-lg-3" data-animate="fadeInUp">
                     <div class="p-4 bg-slate-surface h-100 simple-metric-card border border-light border-opacity-5">
                         <div class="display-5 font-serif text-gold mb-2 fw-light">15K</div>
-                        <span class="fs-8 text-uppercase tracking-wider text-muted fw-light d-block">Sq. Ft. Canvas Space</span>
+                        <span class="fs-9 text-uppercase tracking-wider text-white fw-light d-block">Sq. Ft. Canvas Space</span>
                     </div>
                 </div>
                 
                 <div class="col-6 col-lg-3" data-animate="fadeInUp">
                     <div class="p-4 bg-slate-surface h-100 simple-metric-card border border-light border-opacity-5">
                         <div class="display-5 font-serif text-gold mb-2 fw-light">100%</div>
-                        <span class="fs-8 text-uppercase tracking-wider text-muted fw-light d-block">Contract Integrity</span>
+                        <span class="fs-9 text-uppercase tracking-wider text-white fw-light d-block">Contract Integrity</span>
                     </div>
                 </div>
 
@@ -316,7 +350,7 @@
                     <div class="timeline-card p-4">
                         <span class="font-serif text-gold h4 d-block mb-1 fw-light">2010</span>
                         <h4 class="h6 text-white text-uppercase tracking-wide mb-2">The Architectural Foundation</h4>
-                        <p class="text-muted fs-7 mb-0 lh-base fw-light">Banagar Associates launches its structural blueprint with a clear operational promise: introducing flawless, transparent management standards into traditional open-air lawn environments.</p>
+                        <p class="text-light-muted fs-7 mb-0 lh-base fw-light">Banagar Associates launches its structural blueprint with a clear operational promise: introducing flawless, transparent management standards into traditional open-air lawn environments.</p>
                     </div>
                 </div>
 
@@ -325,7 +359,7 @@
                     <div class="timeline-card p-4">
                         <span class="font-serif text-primary h4 d-block mb-1 fw-light">2018</span>
                         <h4 class="h6 text-white text-uppercase tracking-wide mb-2">The Grand Heritage Unveiling</h4>
-                        <p class="text-muted fs-7 mb-0 lh-base fw-light">To accommodate weather variations, we expanded into climate-controlled indoor designs by engineering the air-conditioned Grand Heritage Banquet Hall with specialized staging architecture.</p>
+                        <p class="text-light-muted fs-7 mb-0 lh-base fw-light">To accommodate weather variations, we expanded into climate-controlled indoor designs by engineering the air-conditioned Grand Heritage Banquet Hall with specialized staging architecture.</p>
                     </div>
                 </div>
 
@@ -334,7 +368,7 @@
                     <div class="timeline-card p-4">
                         <span class="font-serif text-success h4 d-block mb-1 fw-light">2026</span>
                         <h4 class="h6 text-white text-uppercase tracking-wide mb-2">The Smart Digital Integration</h4>
-                        <p class="text-muted fs-7 mb-0 lh-base fw-light">Migrated operations into unified front-end systems, unlocking real-time transparency calendars, simplified query funnels, and data-protected portal layouts for clients globally.</p>
+                        <p class="text-light-muted fs-7 mb-0 lh-base fw-light">Migrated operations into unified front-end systems, unlocking real-time transparency calendars, simplified query funnels, and data-protected portal layouts for clients globally.</p>
                     </div>
                 </div>
             </div>
@@ -381,12 +415,12 @@
                 </div>
             </div>
             <hr class="border-secondary border-opacity-10 my-4">
-            <div class="row align-items-center fs-7 text-muted g-3">
+            <div class="row align-items-center fs-7 text-white g-3">
                 <div class="col-md-6 text-center text-md-start"><p class="mb-0">© 2026 Banagar Associates. All rights reserved.</p></div>
                 <div class="col-md-6 text-center text-md-end">
                     <div class="d-flex justify-content-center justify-content-md-end gap-3 sub-footer-links">
-                        <a href="#" class="text-muted text-decoration-none">Admin</a>
-                        <a href="#" class="text-muted text-decoration-none">Privacy Policy</a>
+                        <a href="./admin.html" class="text-white text-decoration-none">Admin</a>
+                        <a href="#" class="text-white text-decoration-none">Privacy Policy</a>
                     </div>
                 </div>
             </div>

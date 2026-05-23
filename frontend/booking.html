@@ -72,6 +72,7 @@
         
         /* Active state classes for stepper */
         .step-node.active-step { color: #ffffff; }
+
         .step-node.active-step .step-bubble {
             border-color: var(--primary-blue);
             background-color: transparent;
@@ -79,6 +80,7 @@
             color: #ffffff;
         }
         .step-node.completed-step { color: var(--accent-gold); }
+
         .step-node.completed-step .step-bubble {
             border-color: var(--accent-gold);
             background-color: rgba(207, 168, 97, 0.1);
@@ -92,8 +94,16 @@
             cursor: pointer;
             transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
         }
-        .booking-venue-card .img-frame { height: 160px; overflow: hidden; }
-        .booking-venue-card .img-frame img { width: 100%; height: 100%; object-fit: cover; }
+        .booking-venue-card .img-frame { height: 160px; 
+            overflow: hidden; 
+        }
+
+        .booking-venue-card .img-frame img { 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+        }
+
         .booking-venue-card:hover {
             background-color: var(--bg-surface-hover) !important;
             border-color: rgba(255, 255, 255, 0.1) !important;
@@ -119,7 +129,11 @@
             transition: border-color 0.2s ease;
         }
         .form-input-line:focus { border-color: var(--primary-blue); }
-        .form-label-caps { font-size: 0.68rem; letter-spacing: 0.1em; color: #4a5568; text-transform: uppercase; }
+        .form-label-caps { font-size: 0.68rem; 
+            letter-spacing: 0.1em; 
+            color: #4a5568; 
+            text-transform: uppercase; 
+        }
         .color-dark-cal { color-scheme: dark; }
 
         /* Receipt Box Styles */
@@ -489,15 +503,15 @@
 
         <hr class="border-secondary border-opacity-10 my-4">
 
-        <div class="row align-items-center fs-7 text-muted g-3">
+        <div class="row align-items-center fs-7 text-white g-3">
             <div class="col-md-6 text-center text-md-start">
                 <p class="mb-0">&copy; 2026 Banagar Associates. All rights reserved.</p>
             </div>
             <div class="col-md-6 text-center text-md-end">
                 <div class="d-flex justify-content-center justify-content-md-end gap-3 sub-footer-links">
-                    <a href="#" class="text-muted text-decoration-none">Admin</a>
-                    <a href="#" class="text-muted text-decoration-none">Privacy Policy</a>
-                    <a href="#" class="text-muted text-decoration-none">Terms of Service</a>
+                    <a href="./admin.html" class="text-white text-decoration-none">Admin</a>
+                    <a href="#" class="text-white text-decoration-none">Privacy Policy</a>
+                    <a href="#" class="text-white text-decoration-none">Terms of Service</a>
                 </div>
             </div>
         </div>
