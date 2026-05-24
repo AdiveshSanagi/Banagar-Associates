@@ -87,3 +87,17 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+// Close the hamburger menu on mobile after clicking a link
+document.addEventListener("DOMContentLoaded", function () {
+    const mobileMenu = document.querySelector(".navbar-toggler");
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    navLinks.forEach(link => {
+        link.addEventListener("click", function () {
+            if (window.innerWidth < 992) {
+                mobileMenu.click();
+            }
+        });
+    });
+});
